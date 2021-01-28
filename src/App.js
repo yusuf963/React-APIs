@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import FetchJoke from './Component/Joke'
+import Weather from './Component/Weather'
+import Quote from './Component/Quote'
+import AgePridection from './Component/AgePridection'
+import CatFact from './Component/CatFact'
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <FetchJoke />
+      <hr />
+      <Weather />
+      <hr />
+      <Quote />
+      <br />
+      <hr />
+      <AgePridection />
+      <br />
+      <CatFact />
+    </>
+  )
 }
 
 export default App;
